@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    private final com.example.kafka.springbootkafka.Producer producer;
+    private final Producer producer;
 
     @Autowired
-    public TestController(com.example.kafka.springbootkafka.Producer producer) {
+    public TestController(Producer producer) {
         this.producer = producer;
     }
     @PostMapping("/publish")
